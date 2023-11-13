@@ -1,0 +1,144 @@
+.wrapper {
+    border-bottom: 1px solid var(--navBorder-color);
+}
+
+.root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 30px 40px;
+}
+
+.actionButtonsForMobile {
+    display: none;
+}
+
+.navSections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 60px;
+}
+
+.links li {
+    font-size: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.links li a {
+    color: var(--dark-blue-color);
+    text-decoration: none;
+}
+
+.menuIcon {
+    display: none;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 1110px) {
+    .root {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .logoActions {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--navBorder-color);
+        width: 100%;
+        padding: 10px 40px;
+    }
+
+    .actionButtonsForMobile {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .navSections {
+        padding: 20px 40px;
+        width: 100%;
+    }
+
+    .links {
+        width: 100%;
+        gap: 0px;
+    }
+
+    .actionButtons {
+        display: none;
+    }
+}
+
+@media (max-width: 690px) {
+    .logoActions {
+        padding: 10px 33px;
+    }
+
+    .navSections {
+        padding: 10px 33px;
+    }
+}
+
+@media (max-width: 510px) {
+    .navSections {
+        padding: 15px;
+    }
+
+    .logoActions {
+        justify-content: center;
+    }
+
+    .menuIcon {
+        display: block;
+        z-index: 5;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: flex-start;
+        padding: 70px 15px 65px;
+        position: fixed;
+        left: -100%;
+        top: 44px;
+        transition: left 1s;
+        background-color: var(--light-gray-color);
+    }
+
+    .links.active {
+        left: 0;
+    }
+    
+    .links a {
+        font-size: 18px;
+    }
+
+
+    .actionButtons {
+        display: flex;
+    }
+
+    .actionButtonsForMobile {
+        display: none;
+    }
+}

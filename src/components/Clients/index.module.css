@@ -1,0 +1,34 @@
+.background {
+    background-color: var(--light-gray-color);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 60px 0;
+}
+
+.imgWrapper img {
+    width: 100%;
+}
+
+@media (max-width: 690px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 510px) {
+    .wrapper {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .imgWrapper img {
+        width: 150px;
+    }
+}
+
