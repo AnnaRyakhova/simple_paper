@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 125px;
-    /* background-color: orange; */
 }
 
 .content {
@@ -11,24 +10,18 @@
     flex-direction: column;
     max-width: 445px;
     gap: 30px;
-    /* background-color: olivedrab; */
 }
-
-/* .description {
-    padding: 30px 0 0;
-} */
 
 .imageWrapper {
     max-width: 540px;
     max-height: 620px;
     height: auto;
-    background-color: aqua;
     overflow: hidden;
     padding-top: 60px;
 }
 
-.image {
-    max-width: 100%;
+.imageWrapper img {
+    width: 100%;
 }
 
 .btn {
@@ -47,6 +40,7 @@
 
     .imageWrapper {
         max-height: 473px;
+        max-width: 420px;
     }
 
     .content {
@@ -72,6 +66,12 @@
     .btn {
         height: 60px;
         width: 196px;
+    }
+}
+
+@media (max-width: 560px) {
+    .imageWrapper {
+        padding-top: 100px;
     }
 }
 
