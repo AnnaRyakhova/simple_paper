@@ -1,8 +1,8 @@
 import styles from './index.module.css';
-import res1 from '/Users/annaryakhova/Education/simple/src/images/results/res1.png';
-import res2 from '/Users/annaryakhova/Education/simple/src/images/results/res2.png';
-import res3 from '/Users/annaryakhova/Education/simple/src/images/results/res3.png';
-import openFolder from '/Users/annaryakhova/Education/simple/src/images/results/openFolder.png';
+import res1 from '/images/results/res1.png';
+import res2 from '/images/results/res2.png';
+import res3 from '/images/results/res3.png';
+import openFolder from '/images/results/openFolder.png';
 import cn from 'classnames';
 
 const descriptionClassName = cn('text', styles.description)

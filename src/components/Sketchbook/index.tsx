@@ -1,6 +1,6 @@
 import styles from './index.module.css';
 import Button from '../Button';
-import pic from '/Users/annaryakhova/Education/simple/src/images/sketchbook/pic.png';
+import pic from '/images/sketchbook/pic.png';
 
 const Sketcbook = () => {
     return (

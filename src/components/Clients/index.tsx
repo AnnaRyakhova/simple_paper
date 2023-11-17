@@ -1,8 +1,8 @@
 import styles from './index.module.css';
-import client1 from '/Users/annaryakhova/Education/simple/src/images/clients/client1.png';
-import client2 from '/Users/annaryakhova/Education/simple/src/images/clients/client2.png';
-import client3 from '/Users/annaryakhova/Education/simple/src/images/clients/client3.png';
-import client4 from '/Users/annaryakhova/Education/simple/src/images/clients/client4.png';
+import client1 from '/images/clients/client1.png';
+import client2 from '/images/clients/client2.png';
+import client3 from '/images/clients/client3.png';
+import client4 from '/images/clients/client4.png';
 
 const Clients = () => {
     return (

@@ -31,23 +31,23 @@ const products = [{
     title: 'Упаковка',
     circulation: 50,
     description: 'Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.',
-    imgPath: 'src/images/products/packages.png',
+    imgPath: '/images/products/packages.png',
 },
 {
     title: 'Пакеты',
     circulation: 200,
     description: 'С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные расцветки и дизайн.',
-    imgPath: 'src/images/products/packs.png',
+    imgPath: '/images/products/packs.png',
 }, {
     title: 'Кейсы',
     circulation: 30,
     description: 'Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал: прессованная бумага.',
-    imgPath: 'src/images/products/cases.png',
+    imgPath: '/images/products/cases.png',
 }, {
     title: 'Другие изделия',
     circulation: 100,
     description: 'Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в кратчайшие сроки.',
-    imgPath: 'src/images/products/others.png',
+    imgPath: '/images/products/others.png',
 }
 ]
 

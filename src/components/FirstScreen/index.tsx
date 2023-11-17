@@ -1,6 +1,6 @@
 import Button from "../Button";
 import styles from './index.module.css';
-import firstScreen from '/Users/annaryakhova/Education/simple/src/images/firstScreen.png';
+import firstScreen from '/images/firstScreen.png';
 import cn from 'classnames';
 
 const FirstScreen = () => {
