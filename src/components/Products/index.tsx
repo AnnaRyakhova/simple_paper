@@ -8,20 +8,15 @@ interface Card {
     circulation: number;
     description: string;
     imgPath: string;
-    bgPosition: string;
+    key: number;
 }
 
-
-const Card: FC<Card> = ({ title, circulation, description, imgPath, bgPosition }) => {
+const Card: FC<Card> = ({ title, circulation, description, imgPath }) => {
     return (
         <div className={styles.cardWrapper}>
-            <div
-                className={styles.imageWrapper}
-                style={{
-                    backgroundImage: `url(${imgPath})`,
-                    backgroundPosition: `${bgPosition}`,
-                }}
-            />
+            <div className={styles.imageWrapper}>
+                <img src={imgPath} />
+            </div>
 
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.subtitle}>Тираж: от {circulation} штук</p>
@@ -37,33 +32,37 @@ const products = [{
     circulation: 50,
     description: 'Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.',
     imgPath: 'src/images/products/packages.png',
-    bgPosition: 'top 20px center',
 },
 {
-    title: 'Пакеты', circulation: 200, description: 'С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные расцветки и дизайн.',
-    imgPath: 'src/images/products/packs.png', bgPosition: 'top 20px center',
+    title: 'Пакеты',
+    circulation: 200,
+    description: 'С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные расцветки и дизайн.',
+    imgPath: 'src/images/products/packs.png',
 }, {
-    title: 'Кейсы', circulation: 30, description: 'Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал: прессованная бумага.',
-    imgPath: 'src/images/products/cases.png', bgPosition: 'top 20px left 15px',
+    title: 'Кейсы',
+    circulation: 30,
+    description: 'Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал: прессованная бумага.',
+    imgPath: 'src/images/products/cases.png',
 }, {
-    title: 'Другие изделия', circulation: 100, description: 'Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в кратчайшие сроки.',
-    imgPath: 'src/images/products/others.png', bgPosition: 'top 18px center',
+    title: 'Другие изделия',
+    circulation: 100,
+    description: 'Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в кратчайшие сроки.',
+    imgPath: 'src/images/products/others.png',
 }
 ]
 
 const Products = () => {
-
     return (
         <div className='container'>
             <div className={styles.cardsWrapper}>
-                {products.map(({ title, circulation, description, imgPath, bgPosition }) => {
+                {products.map(({ title, circulation, description, imgPath }, index) => {
                     return (
                         <Card
                             title={title}
                             circulation={circulation}
                             description={description}
                             imgPath={imgPath}
-                            bgPosition={bgPosition}
+                            key={index}
                         />
                     )
                 })}

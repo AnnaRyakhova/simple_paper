@@ -14,9 +14,12 @@
     background-color: var(--light-gray-color);
     height: 180px;
     display: flex;
-    justify-content: center;
-    align-items: end;
-    background-repeat: no-repeat;
+}
+
+.imageWrapper img {
+    width: 100%;
+    object-fit: none;
+    object-position: 50% -20%;
 }
 
 .title {
@@ -77,11 +80,21 @@
     .description {
         font-size: 16px;
     }
+
+    .imageWrapper img {
+        /* max-width: 100%; */
+        /* align-self: flex-start; */
+    }
 }
 
 @media (max-width: 510px) {
     .cardsWrapper {
         display: flex;
         flex-direction: column;
+    }
+
+    .imageWrapper img {
+        /* max-width: 115%; */
+        /* align-self: flex-start; */
     }
 }
