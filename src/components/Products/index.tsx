@@ -15,8 +15,13 @@ interface Card {
 const Card: FC<Card> = ({ title, circulation, description, imgPath, bgPosition }) => {
     return (
         <div className={styles.cardWrapper}>
-            <div className={styles.imageWrapper} style={{ backgroundImage: `url(${imgPath})`, backgroundPosition: `${bgPosition}` }} >
-            </div>
+            <div
+                className={styles.imageWrapper}
+                style={{
+                    backgroundImage: `url(${imgPath})`,
+                    backgroundPosition: `${bgPosition}`,
+                }}
+            />
 
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.subtitle}>Тираж: от {circulation} штук</p>
@@ -28,8 +33,11 @@ const Card: FC<Card> = ({ title, circulation, description, imgPath, bgPosition }
 }
 
 const products = [{
-    title: 'Упаковка', circulation: 50, description: 'Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.',
-    imgPath: 'src/images/products/packages.png', bgPosition: 'top 20px center',
+    title: 'Упаковка',
+    circulation: 50,
+    description: 'Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.',
+    imgPath: 'src/images/products/packages.png',
+    bgPosition: 'top 20px center',
 },
 {
     title: 'Пакеты', circulation: 200, description: 'С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные расцветки и дизайн.',
